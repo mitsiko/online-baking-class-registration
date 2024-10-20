@@ -7,6 +7,7 @@ body{
 
 .cinzel {
     font-family: "cinzel decorative";
+    font-weight: normal;
 }
 .nav-section {
     position: sticky;
@@ -50,7 +51,7 @@ body{
     top: 100%;
     left: 0;
     width: 0;
-    height: 1.5px;
+    height: 1px;
     background: #684132;
     transition: 0.3s;
 }
@@ -64,7 +65,10 @@ body{
     background-image: url(images/cake-icing-bg.png);
     flex-direction: row;
     justify-content: space-around;
-    padding: 13rem;
+    padding-top: 13rem;
+    padding-right: 13rem;
+    padding-left: 13rem;
+    padding-bottom: 16rem;
     flex-wrap: wrap;
     border-bottom: solid 1.5px #684132;
 }
@@ -92,32 +96,90 @@ body{
     display:flex;
     padding-right: 12rem;
     padding-left: 12rem;
+    padding-bottom: 6rem;
     flex-direction: row;
-    padding-top: 5rem;
+    padding-top: 8rem;
     justify-content: space-between; 
+    text-align: justify;
 }
 
 .hero-section img{
     width: 25vw;
+    margin-top: -12rem;
+    border: solid 1.5px #684132;
 }
 
 .hero-section-left{
     width: 35vw;
+    justify-items: space-between;
 }
 
-.hero-section-left h3{
-    font-size: 3rem;
-    font-weight: bold;
+.hero-section-left h2{
+    margin-bottom: 1rem;
 }
 
 .hero-section-left p{
-    font-size: 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 .hero-section-left button{
     font-family: "montserrat";
+    margin-right: 2rem;
+}
+
+#register-button{
+    padding: 1rem;
+    background-color:#684132;
+    color:#f4f1e5;
+    border: none;
+}
+
+#learn-more-button{
+    padding: 1rem;
+    background-color:#f4f1e5;
+    color:#684132;
+    border: solid 1.5px #684132;
+}
+
+.about-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right:12rem;
+    padding-left:12rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-top: solid 1.5px #684132;
+    border-bottom: solid 1.5px #684132;
+}
+
+.about-section-right{
+    text-align: justify;
+    order: 3;
+    flex-basis: 50%;
 }
 
 
+.about-section h2{
+   font-family: "playfair display";
+   font-size: 2rem;
+   font-weight: bold;
+   font-style: italic;
+   text-align: left;
+}
+
+.about-section img{
+    height: 45vh;
+    flex-basis: 30%;
+
+}
+
+
+.about-section-right{
+    flex-direction: rows;
+    justify-content: space-around;
+}
 
 
