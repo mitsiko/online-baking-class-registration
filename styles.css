@@ -18,7 +18,7 @@ body{
     padding: 10px 20px;
     background-color: #f4f1e5;
     flex-wrap: nowrap;
-    border-bottom: solid 1.5px #684132;
+    border-bottom: solid 1px #684132;
     margin: 0;
     padding: 0.7rem;
 }
@@ -34,6 +34,7 @@ body{
     list-style: none;
     flex: 1; 
     justify-content: flex-end;  
+    z-index: 1000;
 }
 .navbar a {
     position: relative;
@@ -42,7 +43,9 @@ body{
     margin: 0 15px; /* Space between the items */
     font-weight: normal;
     margin-left: 40px;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    font-size: 0.9rem;
+    
 }
 /* Navigation Bar Animation*/
 .navbar a::before {
@@ -70,7 +73,7 @@ body{
     padding-left: 13rem;
     padding-bottom: 16rem;
     flex-wrap: wrap;
-    border-bottom: solid 1.5px #684132;
+    border-bottom: solid 1px #684132;
 }
 
 .intro h1{
@@ -80,8 +83,6 @@ body{
     margin: 0px;   
     text-align: center;
 }
-
-
 .intro p{
     color:#f4f1e5;
     font-size: 1.5rem;
@@ -91,7 +92,6 @@ body{
     text-align: center;
     flex-wrap: wrap;
 }
-
 .hero-section{
     display:flex;
     padding-left: 12rem;
@@ -99,62 +99,56 @@ body{
     flex-direction: row;
     padding-top: 8rem;
     justify-content: space-between;
-    text-align: right;
-    
+    text-align: right;   
 }
-
 .hero-section img{
     width: 50vw;
     margin-top: -18rem;
     flex-basis: 50%;
     margin-bottom: -10rem;
 }
-
 .hero-section-left{
     width: 35vw;
     justify-items: space-between;
     flex-basis: 50%;
     padding-right: 2rem;
 }
-
 .hero-section-left h2{
     margin-bottom: 1rem;
 }
-
 .hero-section-left p{
     font-size: 1rem;
     margin-bottom: 2rem;
 }
-
 .hero-section-left button{
     font-family: "montserrat";
     margin-left: 2rem;
 }
-
 #register-button{
     padding: 1rem;
     background-color:#684132;
     color:#f4f1e5;
     border: none;
+    border-radius: 0.3rem;
 }
-
 #learn-more-button{
     padding: 1rem;
     background-color:#f4f1e5;
     color:#684132;
-    border: solid 1.5px #684132;
+    border: solid 1px #684132;
+    border-radius: 0.3rem;
 }
-
 .about-section{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     padding-right:12rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    border-top: solid 1.5px #684132;
-    border-bottom: solid 1.5px #684132;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    border-top: solid 1px #684132;
+    border-bottom: solid 1px #684132;
+    z-index: 10;
 }
 
 .about-section-right{
@@ -163,16 +157,13 @@ body{
     flex-basis: 50%;
     align-self: center;
 }
-
-
 .about-section h2{
    font-family: "playfair display";
-   font-size: 2rem;
-   font-weight: bold;
+   font-size: 2.5rem;
+   font-weight: normal;
    font-style: italic;
    text-align: left;
 }
-
 .about-section img{
     height: 55vw;
     flex-basis: 30%;
@@ -180,17 +171,225 @@ body{
     justify-content: flex-start;
     margin-left: -2rem;
     margin-bottom: -8rem;
-
 }
-
 
 .about-section-right{
     flex-direction: rows;
     justify-content: space-around;
+    
 }
 
-
 .course-details{
-    display:flex;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+}
 
+/* New styles for the registration section */
+#registration-section {
+    display: flex;
+    background-color: #f4f1e5;
+    color: #684132;
+    padding: 4rem 12rem;
+    align-items: center;
+    border: solid 1px #684132;
+    justify-content: space-between;
+}
+
+#registration-section-left {
+    flex-basis: 30%;
+    padding-right: 2rem;
+    color: #684132;
+
+}
+#registration-section-left h2 {
+    font-family: "playfair dispplay";
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    font-style: italic;
+    flex-basis: 30%;
+}
+
+#registration-section-form {
+    flex-basis: 40%;
+    background-color: #f4f1e5;
+    padding: 2rem;
+    border: solid 1px #684132;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+
+}
+
+#registration-section-form input,
+#registration-section-form select,
+#registration-section-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #684132;
+    border-radius: 0.3rem;
+    background-color: #f4f1e5;
+    color: #684132;
+}
+
+/* New styles for the radio button group */
+#registration-section-form .radio-group {
+    display: flex;
+    align-self: center;
+    margin-bottom: 1rem;
+    justify-content: space-around;
+}
+
+#registration-section-form .radio-group label:first-child {
+    margin-right: 1rem;
+}
+
+#registration-section-form .radio-group input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+#registration-section-form .radio-group label {
+    margin-right: 1rem;
+    font-weight: normal;
+}
+
+#registration-section-form button{
+    padding: 0.5rem;
+    color:#f4f1e5;
+    background-color:#684132;
+    border: none;
+    border-radius: 0.3rem;
+    font-family: "montserrat";
+}
+
+.footer {
+    background-color: #684132;
+    color: #f4f1e5;
+    padding: 1.5rem 12rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex-basis: calc(33.333% - 2rem);
+    margin-bottom: 2rem;
+}
+
+.footer h2 {
+    font-family: "cinzel decorative", serif;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.footer h3 {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.footer p {
+    margin-bottom: 0.9rem;
+    font-size: 0.7rem;
+}
+
+.footer-links a {
+    display: block;
+    color: #f4f1e5;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    background-color: #4d2f24;
+    color: #f4f1e5;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.8rem;
+}
+/* Testimonials Section */
+.testimonials-section {
+    padding: 10rem 12rem;
+    background-color: #f4f1e5;
+    border-top: solid 1px #4d2f24;
+}
+
+#testimonial-title{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+#testimonial-title p{
+    align-self: center;
+    text-align: right;
+    font-size:0.9rem;
+}
+
+.testimonials-section h2 {
+    text-align: center;
+    font-family: "playfair display";
+    font-weight: normal;
+    font-style: italic;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #684132;
+}
+
+.testimonials-container {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+#quotation-1{
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    margin-top: -12rem;
+}
+
+#quotation-2{
+    height: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-bottom: -12rem;
+    margin-left:48rem;
+
+}
+
+.testimonial-card {
+    flex: 1;
+    background-color: #f4f1e5;
+    border: 1px solid #684132;
+    border-radius: 8px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    align-content: center;
+    margin-bottom: 4rem;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-text {
+    margin-bottom: 1rem;
+    color: #684132;
+}
+
+.testimonial-author {
+    text-align: right;
+    color: #684132;
+    font-weight: 600;
 }
