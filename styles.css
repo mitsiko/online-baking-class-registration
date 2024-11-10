@@ -5,6 +5,8 @@ body{
     font-family: "montserrat";
 }
 
+/* Main Page */
+
 .cinzel {
     font-family: "cinzel decorative";
     font-weight: normal;
@@ -57,7 +59,7 @@ body{
     top: 100%;
     left: 0;
     width: 0;
-    height: 1px;
+    height: 0.8px;
     background: #684132;
     transition: 0.3s;
 }
@@ -467,3 +469,5 @@ body{
 .course-details-content p:last-child {
     margin-bottom: 0;
 }
+
+/* Dashboard Page */
